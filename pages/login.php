@@ -51,6 +51,12 @@
     <br>
     <hr>
     <main>
+        <div id="warning">Warning!!!</div>
+        <div id="under_construction">
+            <img src="../images/under_construction.png" alt="Under Construction Symbol">
+        </div>
+        <br>
+        <br>
         <br>
         <br>
         <div id="page-title">Login</div>
