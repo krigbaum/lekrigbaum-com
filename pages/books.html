@@ -1,0 +1,111 @@
+
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>lekrigbaum</title>
+		<link rel="stylesheet" href="../css/lekrigbaum.css" type="text/css" media="screen"/>
+		<link rel="stylesheet" href="../css/nav.css" type="text/css" media="screen"/>
+		<link rel="stylesheet" href="../css/BOMTable.css" type="text/css" media="screen"/>
+		<!--<script src="../js/books.js"></script>-->
+		<link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<header>
+		    <div id="flexbox">
+                <figure>
+                    <img src="../images/wartree.png" alt="Wartree Logo" />
+                    <figcaption>Wartree</figcaption>
+                </figure>
+                <div id="title">
+                    <span id="title-line1">lekrigbaum.com</span><br>
+                    <span id="title-line2">Wartree Web Development</span>
+                </div>
+            </div>
+            <div id="nav-menu">
+		    <nav>
+		    
+				<ul>
+		            <li><a href="../index.html">Home</a>
+		            <li><a href="wartree.html">Wartree</a></li>
+		            <li><a href="../pages/professional.html">Professional</a></li>
+		            <li><a href="../pages/resume.html">Resume</a></li>
+		            <li><a href="../pages/programming.html">Programming</a></li>
+		        </ul>
+		    </nav>
+		    </div>
+			<br>
+		</header>
+		<main>
+			<br>
+			<div id="page-title">Books</div>
+			<hr>
+			<br><br>
+			Don't expect to find many poor reviews on this page.  There's no shortage of bad technical books and I don't intend to waste anyone's time just to point out a crappy book.  I'm sure exceptions may pop up, but I'd just as soon they don't.  Also, don't expect to find many perfect scores.  Perhaps I'm overly nit-picky, but no matter how much I like a book, there always seem to be a few flaws to my way of thinking.  It could be style, organization, too much detail, not enough detail, blah, blah, blah.  Which brings me to the last thing I want to mention.  The comments are just my opinion, nothing more.  You may love a book I dislike or despise a book that's one of my favorites.  I hope what I say here has some value to you, but when it comes to assembling your own library, it's what you think that counts.<br>
+			<br>
+			Trying to decide on a rating system was very difficult.  None of them, including the 10 point system I finally settled on, seemed to be exactly what what I wanted.  I decided to use the 10 point system along with the following guidelines to allow for a but more nuance.
+			<br><br>
+			<table>
+				<tr>
+					<th>Rating</th>
+					<th>Recommendation</th>
+				</tr>
+				<tr>
+					<td>9 - 10</td>
+					<td>Recommended</td>
+				</tr>
+				<tr>
+					<td>7 - 8</td>
+					<td>Useful</td>
+				</tr>
+				<tr>
+					<td>5 - 6</td>
+					<td>Limited Value</td>
+				</tr>
+				<tr>
+					<td> < 5</td>
+					<td>A waste of time</td>
+				</tr>
+			</table>
+			<br><br>
+
+			<table id="reviews"> </table>
+
+			<script>
+                var xmlhttp = new XMLHttpRequest();
+				var url = "../data/reviews.json";
+				console.log(url);
+
+				xmlhttp.onreadystatechange = function() {
+					if (xmlhttp.readyState === 4 &&xmlhttp.status == 200) {
+						var json_in = JSON.parse(xmlhttp.responseText);
+						console.log(json_in);
+						load_json(json_in);
+					}
+				}
+				xmlhttp.open("GET", url, true);
+				xmlhttp.send();
+
+				function load_json(data) {
+					console.log(data);
+					var out = "<tr><th id=\"title\">Title, Author</th><th id=\"rating\">Rating</th><th id=\"desc\">Description</th></tr>";
+					var i;
+					console.log(data.books.length);
+					for(i = 0; i < data.books.length; i++) {
+						console.log(data.books[i].Title);
+						//out = data.books[i].Title;
+						out += "<tr><td>" + data.books[i].Title + ", " + data.books[i].Author + "</td><td>" + data.books[i].Rating + "/10</td><td>" + data.books[i].Description + "</td></tr>";
+					}
+					document.getElementById("reviews").innerHTML = out;
+				}
+			</script>
+			
+			<br>
+		</main>
+		<footer>
+			
+		</footer>
+	</body>
+</html>

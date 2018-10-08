@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>lekrigbaum</title>
+    <link rel="stylesheet" href="../css/lekrigbaum.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../css/nav.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../css/html5cs.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="../css/table.css" type="text/css" media="screen">
+    <script src="../js/html5cs.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header>
+        <div id="nav-menu">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a>
+                        <li><a href="wartree.html">Wartree</a></li>
+                        <li><a href="./resume.html">Resume</a></li>
+                        <li><a href="./programming.html">Programming</a></li>
+                        <li><a href="./login.php">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="header-body">
+            <figure>
+                <img src="../images/wartree.png" alt="Wartree Logo" />
+                <figcaption>Wartree</figcaption>
+            </figure>
+            <div id="title">
+                <br>
+
+                <span id="title-line1">lekrigbaum.com</span>
+                <br>
+            </div>
+        </div>
+        <br>
+    </header>
+    <br>
+    <main>
+        <br>
+        <div id="page-title">HTML5 Cheat Sheet</div>
+        <h6>(This is a long-term work-in-progress)</h6>
+        <hr>
+
+        <br>
+        <div class="section-title">
+            <h2>HTML5 Tags</h2>
+            <br>
+        </div>
+        <div class="html5-tags">
+            <span title="Comment"><button onclick='tagdetails("comment")'>&lt;!--...--&gt;</button></span>
+            <br>
+            <span title="Document Type"><button onclick='tagdetails("doctype")'>&lt;!DOCTYPE&gt;</button></span>
+            <br>
+            <span title="Anchor"><button onclick='tagdetails("anchor")'>&lt;a&gt;</button></span>
+            <br>
+            <span title="Abbreviation"><button onclick='tagdetails("abbr")'>&lt;abbr&gt;</button></span>
+            <br>
+            <span title="Address"><button onclick='tagdetails("address")'>&lt;address&gt;</button></span>
+            <br>
+            <span title="Area"><button onclick='tagdetails("area")'>&lt;area&gt;</button></span>
+            <br>
+            <span title="Article"><button onclick='tagdetails("article")'>&lt;article&gt;</button></span>
+            <br>
+            <span title="Aside"><button onclick='tagdetails("aside")'>&lt;aside&gt;</button></span>
+            <br>
+            <span title="Audio"><button onclick='tagdetails("audio")'>&lt;audio&gt;</button></span>
+            <br>
+            <span title="Bold"><button onclick='tagdetails("bold")'>&lt;b&gt;</button></span>
+            <br>
+            <span title="Base"><button onclick='tagdetails("base")'>&lt;base&gt;</button></span>
+            <br>
+            <span title="BDI"><button onclick='tagdetails("bdi")'>&lt;bdi&gt;</button></span>
+            <br>
+            <span title="BDO"><button onclick='tagdetails("bdo")'>&lt;bdo&gt;</button></span>
+            <br>
+            <span title="Block Quote"><button onclick='tagdetails("blockquote")'>&lt;blockquote&gt;</button></span>
+            <br>
+            <span title="Body"><button onclick='tagdetails("body")'>&lt;body&gt;</button></span>
+            <br>
+            <span title="Break"><button onclick='tagdetails("br")'>&lt;br&gt;</button></span>
+            <br>
+            <span title="Button"><button onclick='tagdetails("button")'>&lt;button&gt;</button></span>
+            <br>
+            <span title="Canvas"><button onclick='tagdetails("canvas")'>&lt;canvas&gt;</button></span>
+            <br>
+            <span title="Caption"><button onclick='tagdetails("caption")'>&lt;caption&gt;</button></span>
+            <br>
+            <span title="Cite"><button onclick='tagdetails("cite")'>&lt;cite&gt;</button></span>
+            <br>
+            <span title="Code"><button onclick='tagdetails("code")'>&lt;code&gt;</button></span>
+            <br>
+            <span title="Column"><button onclick='tagdetails("col")'>&lt;col&gt;</button></span>
+            <br>
+            <span title="Column Group"><button onclick='tagdetails("colgroup")'>&lt;colgroup&gt;</button></span>
+            <br>
+            <span title="Datalist"><button onclick='tagdetails("datalist")'>&lt;datalist&gt;</button></span>
+            <br>
+            <span title="DD"><button onclick='tagdetails("dd")'>&lt;dd&gt;</button></span>
+            <br>
+            <span title="Del"><button onclick='tagdetails("del")'>&lt;del&gt;</button></span>
+            <br>
+            <span title="Details"><button onclick='tagdetails("details")'>&lt;details&gt;</button></span>
+            <br>
+            <span title="DFN"><button onclick='tagdetails("dfn")'>&lt;dfn&gt;</button></span>
+            <br>
+            <span title="Dialog"><button onclick='tagdetails("dialog")'>&lt;dialog&gt;</button></span>
+            <br>
+            <span title="Div"><button onclick='tagdetails("div")'>&lt;div&gt;</button></span>
+            <br>
+            <span title="DL"><button onclick='tagdetails("dl")'>&lt;dl&gt;</button></span>
+            <br>
+            <span title="DT"><button onclick='tagdetails("dt")'>&lt;dt&gt;</button></span>
+            <br>
+            <span title="EM"><button onclick='tagdetails("em")'>&lt;em&gt;</button></span>
+            <br>
+            <span title="Embed"><button onclick='tagdetails("embed")'>&lt;embed&gt;</button></span>
+            <br>
+            <span title="Fieldset"><button onclick='tagdetails("fieldset")'>&lt;fieldset&gt;</button></span>
+            <br>
+            <span title="Figcaption"><button onclick='tagdetails("figcaption")'>&lt;figcaption&gt;</button></span>
+            <br>
+            <span title="Figure"><button onclick='tagdetails("figure")'>&lt;figure&gt;</button></span>
+            <br>
+            <span title="Footer"><button onclick='tagdetails("footer")'>&lt;footer&gt;</button></span>
+            <br>
+            <span title="Form"><button onclick='tagdetails("form")'>&lt;form&gt;</button></span>
+            <br>
+            <span title="Heading"><button onclick='tagdetails("heading")'>&lt;h1...6&gt;</button></span>
+            <br>
+            <span title="Head"><button onclick='tagdetails("head")'>&lt;head&gt;</button></span>
+            <br>
+            <span title="Header"><button onclick='tagdetails("header")'>&lt;header&gt;</button></span>
+            <br>
+            <span title="Horizontal Rule"><button onclick='tagdetails("hr")'>&lt;hr&gt;</button></span>
+            <br>
+            <span title="HTML"><button onclick='tagdetails("html")'>&lt;html&gt;</button></span>
+            <br>
+            <span title="Italic"><button onclick='tagdetails("i")'>&lt;i&gt;</button></span>
+            <br>
+            <span title="iframe"><button onclick='tagdetails("iframe")'>&lt;iframe&gt;</button></span>
+            <br>
+            <span title="Image"><button onclick='tagdetails("img")'>&lt;img&gt;</button></span>
+            <br>
+            <span title="Input"><button onclick='tagdetails("input")'>&lt;input&gt;</button></span>
+            <br>
+            <span title="Insert"><button onclick='tagdetails("ins")'>&lt;ins&gt;</button></span>
+            <br>
+            <span title="KBD"><button onclick='tagdetails("kbd")'>&lt;kbd&gt;</button></span>
+            <br>
+            <span title="Keygen"><button onclick='tagdetails("keygen")'>&lt;keygen&gt;</button></span>
+            <br>
+            <span title="Label"><button onclick='tagdetails("label")'>&lt;label&gt;</button></span>
+            <br>
+            <span title="Legend"><button onclick='tagdetails("legend")'>&lt;legend&gt;</button></span>
+            <br>
+            <span title="LI"><button onclick='tagdetails("li")'>&lt;li&gt;</button></span>
+            <br>
+            <span title="Link"><button onclick='tagdetails("link")'>&lt;link&gt;</button></span>
+            <br>
+            <span title="Main"><button onclick='tagdetails("main")'>&lt;main&gt;</button></span>
+            <br>
+            <span title="Map"><button onclick='tagdetails("map")'>&lt;map&gt;</button></span>
+            <br>
+            <span title="Mark"><button onclick='tagdetails("mark")'>&lt;mark&gt;</button></span>
+            <br>
+            <span title="Menu"><button onclick='tagdetails("menu")'>&lt;menu&gt;</button></span>
+            <br>
+            <span title="Menu Item"><button onclick='tagdetails("menuitem")'>&lt;menuitem&gt;</button></span>
+            <br>
+            <span title="Meta"><button onclick='tagdetails("meta")'>&lt;meta&gt;</button></span>
+            <br>
+            <span title="Meter"><button onclick='tagdetails("meter")'>&lt;meter&gt;</button></span>
+            <br>
+            <span title="Navigation"><button onclick='tagdetails("nav")'>&lt;nav&gt;</button></span>
+            <br>
+            <span title="No Script"><button onclick='tagdetails("noscript")'>&lt;noscript&gt;</button></span>
+            <br>
+            <span title="Object"><button onclick='tagdetails("object")'>&lt;object&gt;</button></span>
+            <br>
+            <span title="Ordered List"><button onclick='tagdetails("ol")'>&lt;ol&gt;</button></span>
+            <br>
+            <span title="optgroup"><button onclick='tagdetails("optgroup")'>&lt;optgroup&gt;</button></span>
+            <br>
+            <span title="Option"><button onclick='tagdetails("option")'>&lt;option&gt;</button></span>
+            <br>
+            <span title="Output"><button onclick='tagdetails("output")'>&lt;output&gt;</button></span>
+            <br>
+            <span title="P"><button onclick='tagdetails("p")'>&lt;p&gt;</button></span>
+            <br>
+            <span title="Param"><button onclick='tagdetails("param")'>&lt;param&gt;</button></span>
+            <br>
+            <span title="Pre"><button onclick='tagdetails("pre")'>&lt;pre&gt;</button></span>
+            <br>
+            <span title="Progress"><button onclick='tagdetails("progress")'>&lt;progress&gt;</button></span>
+            <br>
+            <span title="Q"><button onclick='tagdetails("q")'>&lt;q&gt;</button></span>
+            <br>
+            <span title="RP"><button onclick='tagdetails("rp")'>&lt;rp&gt;</button></span>
+            <br>
+            <span title="RT"><button onclick='tagdetails("rt")'>&lt;rt&gt;</button></span>
+            <br>
+            <span title="Ruby"><button onclick='tagdetails("ruby")'>&lt;ruby&gt;</button></span>
+            <br>
+            <span title="S"><button onclick='tagdetails("s")'>&lt;s&gt;</button></span>
+            <br>
+            <span title="samp"><button onclick='tagdetails("samp")'>&lt;samp&gt;</button></span>
+            <br>
+            <span title="Script"><button onclick='tagdetails("script")'>&lt;script&gt;</button></span>
+            <br>
+            <span title="Section"><button onclick='tagdetails("section")'>&lt;section&gt;</button></span>
+            <br>
+            <span title="Select"><button onclick='tagdetails("select")'>&lt;select&gt;</button></span>
+            <br>
+            <span title="Small"><button onclick='tagdetails("small")'>&lt;small&gt;</button></span>
+            <br>
+            <span title="Source"><button onclick='tagdetails("source")'>&lt;source&gt;</button></span>
+            <br>
+            <span title="Span"><button onclick='tagdetails("span")'>&lt;span&gt;</button></span>
+            <br>
+            <span title="strong"><button onclick='tagdetails("strong")'>&lt;strong&gt;</button></span>
+            <br>
+            <span title="Style"><button onclick='tagdetails("style")'>&lt;style&gt;</button></span>
+            <br>
+            <span title="sub"><button onclick='tagdetails("sub")'>&lt;sub&gt;</button></span>
+            <br>
+            <span title="Summary"><button onclick='tagdetails("summary")'>&lt;summary&gt;</button></span>
+            <br>
+            <span title="sup"><button onclick='tagdetails("sup")'>&lt;sup&gt;</button></span>
+            <br>
+            <span title="Table"><button onclick='tagdetails("table")'>&lt;table&gt;</button></span>
+            <br>
+            <span title="Table Body"><button onclick='tagdetails("tbody")'>&lt;tbody&gt;</button></span>
+            <br>
+            <span title="td"><button onclick='tagdetails("td")'>&lt;td&gt;</button></span>
+            <br>
+            <span title="Text Area"><button onclick='tagdetails("textarea")'>&lt;textarea&gt;</button></span>
+            <br>
+            <span title="Table Footer"><button onclick='tagdetails("tfoot")'>&lt;tfoot&gt;</button></span>
+            <br>
+            <span title="Table Header"><button onclick='tagdetails("th")'>&lt;th&gt;</button></span>
+            <br>
+            <span title="Table Head"><button onclick='tagdetails("thead")'>&lt;thead&gt;</button></span>
+            <br>
+            <span title="Time"><button onclick='tagdetails("time")'>&lt;time&gt;</button></span>
+            <br>
+            <span title="Title"><button onclick='tagdetails("title")'>&lt;title&gt;</button></span>
+            <br>
+            <span title="Table Row"><button onclick='tagdetails("tr")'>&lt;tr&gt;</button></span>
+            <br>
+            <span title="Track"><button onclick='tagdetails("track")'>&lt;track&gt;</button></span>
+            <br>
+            <span title="u"><button onclick='tagdetails("u")'>&lt;u&gt;</button></span>
+            <br>
+            <span title="Unordered List"><button onclick='tagdetails("ul")'>&lt;ul&gt;</button></span>
+            <br>
+            <span title="Var"><button onclick='tagdetails("var")'>&lt;var&gt;</button></span>
+            <br>
+            <span title="Video"><button onclick='tagdetails("video")'>&lt;video&gt;</button></span>
+            <br>
+            <span title="WBR"><button onclick='tagdetails("wbr")'>&lt;wbr&gt;</button></span>
+            <br>
+        </div>
+        <hr>
+        <div class="section-title">
+            <h2><span id="detail-name"> Detail</h2>
+            <br>
+        </div>
+        <table class="table">
+            <tr>
+                <td class="col1">Usage:</td>
+                <td id="usage" class="col2"></td>
+            </tr>
+            <tr>
+                <td class="col1">Attibutes:</td>
+                <td id="attrib" class="col2"></td>
+            </tr>
+            <tr>
+                <td class="col1">Example:</td>
+                <td id="example" class="col2"></td>
+            </tr>
+        </table>
+        <!-- 
+		<div class="table">
+	        <div class="row">
+	            <div class="cell col1">Usage:</div>
+	            <div class="cell col2" id="usage"></div>
+	        </div>
+	        <div class="row">
+	            <div class="cell col1">Attributes:</div>
+	            <div class="cell col2" id="attrib"></div>
+	        </div>
+	        <div class="row">
+	            <div class="cell col1">Example:</div>
+	            <div class="cell col2" id="example"></div>
+	        </div>
+	    </div>
+        -->
+        <hr>
+        <div class="global-attribs">
+            <h2>Global Attributes</h2>
+            <br>
+        </div>
+        <div class="table">
+            <div class="row">
+                <div class="cell col1">Attribute</div>
+                <div class="cell col2">Description</div>
+            </div>
+            <div class="row">
+                <div class="cell col1">accesskey</div>
+                <div class="cell col2">Specifies a shortcut key to activate/focus an elementCell B2</div>
+            </div>
+            <div class="row">
+                <div class="cell col1">class</div>
+                <div class="cell col2">Specifies one or more classnames for an element (refers to a class in a style sheet)</div>
+            </div>
+            <div class="row">
+                <div class="cell col1">contenteditable</div>
+                <div class="cell col2">Specifies whether the content of an element is editable or not</div>
+            </div>
+            <div class="row">
+                <div class="cell col1">contextmenu</div>
+                <div class="cell col2">Specifies a context menu for an element. The context menu appears when a user right-clicks on the element</div>
+            </div>
+            <div class="row">
+                <div class="cell col1">data-*</div>
+                <div class="cell col2">Used to store custom data private to the page or application</div>
+            </div>
+            <div class="row">
+                <div class="cell col1">dir</div>
+                <div class="cell col2">Specifies the text direction for the content in an element</div>
+            </div>
+            <div class="row">
+                <div class="cell col1">draggable</div>
+                <div class="cell col2">Specifies whether an element is draggable or not</div>
+            </div>
+            <div class="row">
+                <div class="cell col1">dropzone</div>
+                <div class="cell col2">Specifies whether the dragged data is copied, moved, or linked, when dropped</div>
+            </div>
+            <div class="row">
+                <div class="cell col1">hidden</div>
+                <div class="cell col2">Specifies that an element is not yet, or is no longer, relevant</div>
+            </div>
+            <div class="row">
+                <div class="cell col1">id</div>
+                <div class="cell col2">Specifies a unique class for an element</div>
+            </div>
+            <div class="row">
+                <div class="cell col1">lang</div>
+                <div class="cell col2">Specifies the language of the element's content</div>
+            </div>
+            <div class="row">
+                <div class="cell col1">spellcheck</div>
+                <div class="cell col2">Specifies whether the element is to have its spelling and grammar checked or not</div>
+            </div>
+            <div class="row">
+                <div class="cell col1">style</div>
+                <div class="cell col2">Specifies an inline CSS style for an element. Avoid,</div>
+            </div>
+            <div class="row">
+                <div class="cell col1">tabindex</div>
+                <div class="cell col2">Specifies the tabbing order of an element/div>
+                </div>
+                <div class="row">
+                    <div class="cell col1">title</div>
+                    <div class="cell col2">Specifies extra information about an element</div>
+                </div>
+                <div class="row">
+                    <div class="cell col1">translate</div>
+                    <div class="cell col2">Specifies whether the content of an element should be translated or not</div>
+                </div>
+            </div>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lekrigbaum</title>
+    <link rel="stylesheet" href="../css/lekrigbaum.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../css/nav.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../css/BOMTable.css" type="text/css" media="screen" />
+    <script src="../js/BOMTable.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <header>
+        <div id="nav-menu">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a>
+                        <li><a href="wartree.html">Wartree</a></li>
+                        <li><a href="./resume.html">Resume</a></li>
+                        <li><a href="./programming.html">Programming</a></li>
+                        <li><a href="./login.php">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="header-body">
+            <figure>
+                <img src="../images/wartree.png" alt="Wartree Logo" />
+                <figcaption>Wartree</figcaption>
+            </figure>
+            <div id="title">
+                <br>
+
+                <span id="title-line1">lekrigbaum.com</span>
+                <br>
+            </div>
+        </div>
+        <br>
+    </header>
+    <main>
+        <br>
+        <div id="page-title">Browser Object Model</div>
+        <hr>
+        <table id="windowGlobal">
+            <tr>
+                <th>
+                    BOM Global Property
+                </th>
+                <th>
+                    Property Description
+                </th>
+                <th>
+                    Returned Value
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    window.location
+                </td>
+                <td>
+                    Current URL
+                </td>
+                <td id="location">
+                    <script>
+                        getWindowLocation()
+                    </script>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    window.screen
+                </td>
+                <td>
+                    Reference to Screen Object
+                </td>
+                <td id="screen">
+                    <script>
+                        getWindowScreen()
+                    </script>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    window.screen.width
+                </td>
+                <td>
+                    Width of screen in pixels
+                </td>
+                <td id="screenWidth">
+                    <script>
+                        getWindowScreenWidth()
+                    </script>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    window.screen.height
+                </td>
+                <td>
+                    Height of screen in pixels
+                </td>
+                <td id="screenHeight">
+                    <script>
+                        getWindowScreenHeight()
+                    </script>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    window.screenX
+                </td>
+                <td>
+                    X-coordinate of cursor (in pixels) relative to upper-left corrner of screen
+                </td>
+                <td id="screenX">
+                    <script>
+                        getWindowScreenX()
+                    </script>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    window.screenY
+                </td>
+                <td>
+                    Y-coordinate of cursor (in pixels) relative to upper-left corrner of screen
+                </td>
+                <td id="screenY">
+                    <script>
+                        getWindowScreenY()
+                    </script>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    window.innerWidth
+                </td>
+                <td>
+                    Width of browser window in pixels
+                </td>
+                <td id="innerWidth">
+                    <script>
+                        getWindowInnerWidth()
+                    </script>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    window.innerHeight
+                </td>
+                <td>
+                    Height of browser window in pixels
+                </td>
+                <td id="innerHeight">
+                    <script>
+                        getWindowInnerHeight()
+                    </script>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    window.document
+                </td>
+                <td>
+                    Reference to current page object
+                </td>
+                <td id="document">
+                    <script>
+                        getWindowDocument()
+                    </script>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    window.history
+                </td>
+                <td>
+                    Reference to browser history object
+                </td>
+                <td id="history">
+                    <script>
+                        getWindowHistory()
+                    </script>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    window.history.length
+                </td>
+                <td>
+                    Number of pages in browser history
+                </td>
+                <td id="historyLength">
+                    <script>
+                        getWindowHistoryLength()
+                    </script>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+        <table>
+            <tr>
+                <th>
+                    BOM Global Method
+                </th>
+                <th>
+                    Method Description
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    window.alert()
+                </td>
+                <td>
+                    Open an alert dialog displaying the method arguments
+                </td>
+                <tr>
+                    <td>
+                        window.open()
+                    </td>
+                    <td>
+                        Open a new browser window using the method argument as the URL
+                    </td>
+                    <tr>
+                        <td>
+                            window.print()
+                        </td>
+                        <td>
+                            Open the browser's print dialog for the current page
+                        </td>
+                    </tr>
+        </table>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

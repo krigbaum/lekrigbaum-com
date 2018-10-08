@@ -1,0 +1,52 @@
+{
+	"courses" : [
+		{
+			"Course" : "Web Development",
+			"Website" : "Udacity",
+			"URL" : "https://www.udacity.com/course/web-development--cs253",
+			"Description" : "Basics of using HTML, CSS, and Javascript to create web sites.  Note: This course has since been modified."
+		},
+		{
+			"Course" : "Intro to HTML and CSS",
+			"Website" : "Udacity",
+			"URL" : "https://in.udacity.com/course/intro-to-html-and-css--ud304",
+			"Description" : "Introduction to HTML, CSS, design concepts and the Document Object Model."
+		},
+		{
+			"Course" : "Javascript Basics",
+			"Website" : "Udacity",
+			"URL" : "https://in.udacity.com/course/javascript-basics--ud804",
+			"Description" : "Introduction to Javascript programming and using Javascript to interact with the DOM to modify web pages."
+		},
+		{
+			"Course" : "Responsive Web Design Fundamentals",
+			"Website" : "Udacity",
+			"URL" : "https://www.udacity.com/course/web-development--cs253",
+			"Description" : "Principles of responsive web site design and how to create layouts."
+		},
+		{
+			"Course" : "JavaScript: Understanding the Weird Parts",
+			"Website" : "Udemy",
+			"URL" : "https://www.udemy.com/understand-javascript/",
+			"Description" : "An in-depth examination of Javascript features."
+		},
+		{
+			"Course" : "Bulding Responsive Real World Websites with HTML5 and CSS",
+			"Website" : "Udemy",
+			"URL" : "https://www.udemy.com/design-and-develop-a-killer-website-with-html5-and-css3/",
+			"Description" : "Extensive exercises in building real-world websites."
+		},
+		{
+			"Course" : "Go Programming Language",
+			"Website" : "Udemy",
+			"URL" : "https://www.udemy.com/learn-how-to-code/",
+			"Description" : "Extensive introduction to the Go programming language."
+		},
+		{
+			"Course" : "Web Development with Google's Go Programming Language",
+			"Website" : "Udemy",
+			"URL" : "https://www.udemy.com/go-programming-language/",
+			"Description" : "Using Go to replace web server.  Includes use of Go templates and other features."
+		}
+	]
+}

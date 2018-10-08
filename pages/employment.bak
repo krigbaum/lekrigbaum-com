@@ -1,0 +1,50 @@
+[
+		{
+			"Name" : "Purdue University",
+			"JobTitle" : "High Performance Computing Developer",
+			"Dates" : "2014 to Present",
+			"Description" : "Develop systems-oriented software for the research supercomputer clusters. Notable projects include Slingcast which is ties together the central system log, Fail2Ban, RabbitMQ, and iptables to prevent round-robin brute force attacks, and LDPLFS which extends the LDPLFS libraray to allow the use of PLFS file systems while continuing to use Posix-compliant languages.  Using Go, I have developed a Docker plug-in drive for mounting Ceph file systems which was contributed to the Github project repository at github.com/Containx/docker-volume-netshare."
+		},
+		{
+			"Name" : "Purdue University",
+			"JobTitle" : "SAP Basis Administrator",
+			"Dates" : "2006 to 2014",
+			"Description" : "Performed installations, upgrades, migrations, and maintainance of SAP systems in ERP implementation. Provided daily support and troubleshooting in support of the SAP Portal team."
+		},
+		{
+			"Name" : "Purdue University",
+			"JobTitle" : "DBA Group Leader",
+			"Dates" : "2004 to 2006",
+			"Description" : "Performed front-line supervision of eight DBAs. Coordinated group activities and was responsible for project management and scheduling for a number of projects, most notably a large-scale migration to new storage, and the integration of SQL Server databases into Purdue's technology mix."
+		},
+		{
+			"Name" : "Purdue University",
+			"JobTitle" : "Data Base Administrator - Technical Lead",
+			"Dates" : "2002 to 2004",
+			"Description" : "Developed procedures fo0llowed by other DBAs in performing installations, upgrades, and patches, as well as checking the viability of those before release.  Tested new technologies prior to adoption.  Supported other members of the DBA Group with technical issues."
+		},
+		{
+			"Name" : "Purdue University",
+			"JobTitle" : "Data Base Administrator",
+			"Dates" : "1997 to 2002",
+			"Description" : "Performed installations, upgrades, migrations, and maintainance of Oracle databases. Provided daily support and troubleshooting in support of a number of application and project teams."
+		},
+		{
+			"Name" : "Indiana State University",
+			"JobTitle" : "Banner Data Base Administrator",
+			"Dates" : "1996 to 1997",
+			"Description" : "Performed installations, upgrades, migrations, and maintainance of Oracle databases utilzed in support of the Banner ERP system. Provided daily support and troubleshooting in support of a number of application and project teams. Provided daily support and troubleshooting to System Administrators and project teams."
+		},
+		{
+			"Name" : "John Wood Community College",
+			"JobTitle" : "Programmer / DBA",
+			"Dates" : "1993 to 1995",
+			"Description" : "Performed programming in C and SQLPlus to maintain, modify and expand the Banner ERP software. Also acted as the Oracle DBA in support of the Banner ERP database."
+		},
+		{
+			"Name" : "John Wood Community College",
+			"JobTitle" : "Computer Science Instructor",
+			"Dates" : "1986 to 1993",
+			"Description" : "Developed curiculum and taught a variety of computer courses, including advanced programming in Assembly language, C, and C++ to professional programmers for local industry. I also acted as the Computer Science Coordinator supervising other faculty and the curriculum."
+		}
+]

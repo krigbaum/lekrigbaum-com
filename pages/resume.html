@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>lekrigbaum</title>
+    <link rel="stylesheet" href="../css/lekrigbaum.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../css/nav.css" type="text/css" media="screen" />
+    <link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+        <header>
+                <div id="nav-menu">
+                    <nav>
+                        <ul>
+                            <li><a href="../index.html">Home</a>
+                                <li><a href="wartree.html">Wartree</a></li>
+                                <li><a href="./resume.html">Resume</a></li>
+                                <li><a href="./programming.html">Programming</a></li>
+                                <li><a href="./login.php">Login</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="header-body">
+                    <figure>
+                        <img src="../images/wartree.png" alt="Wartree Logo" />
+                        <figcaption>Wartree</figcaption>
+                    </figure>
+                    <div id="title">
+                        <br>
+        
+                        <span id="title-line1">lekrigbaum.com</span>
+                        <br>
+                    </div>
+                </div>
+                <br>
+            </header>
+            <br>
+            <hr>
+    <main>
+        <br>
+        <br>
+        <div id="page-title">Resume</div>
+        <br>
+        <div id="resume">
+            <div class="line">
+                <div class="resume-heading">Position:</div>
+                <div class="resume-data">&nbsp;&nbsp;Software Developer</div>
+                <br>
+            </div>
+        </div><br>
+        <div class="line">
+            <div class="resume-heading">Skills at a Glance:</div>
+            <div class="resume-data">&nbsp;&nbsp;&middot; HTML &nbsp;&nbsp;&middot; CSS &nbsp;&nbsp;&middot; Javascript &nbsp;&nbsp;&middot; PHP &nbsp;&nbsp;&middot; Java &nbsp;&nbsp;&middot; C &nbsp;&nbsp;&middot; Go &nbsp;&nbsp;&middot; C++ &nbsp;&nbsp;&middot; Python &nbsp;&nbsp;</div>
+            <br>
+        </div>
+        <br><br>
+        <div class="row" class="resume-title">Employment</div>
+        <table id="jobs">
+            <script>
+                var empxmlhttp = new XMLHttpRequest();
+                var jobs = "employment.json";
+                empxmlhttp.onreadystatechange = function() {
+                    if (empxmlhttp.readyState === 4 && empxmlhttp.status == 200) {
+                        var empl_in = JSON.parse(empxmlhttp.responseText);
+												console.log("Showing empl_in");
+												console.log(empl_in);
+                        load_empjson(empl_in);
+                    }
+                }
+                empxmlhttp.open("GET", jobs, true);
+                empxmlhttp.send();
+
+                function load_empjson(empdata) {
+										console.log("Showing Employment data");
+										console.log(empdata);
+                    var out = "";
+                    var i;
+                    for (i = 0; i < empdata.jobs.length; i++) {
+                        out += "<tr><td id = \"data-column\" width=\"30%\">" + empdata.jobs[i].Name + "<br>" + empdata.jobs[i].JobTitle + "<br>" + empdata.jobs[i].Dates + "</td><td id = \"desc-column\" width=\"70%\">" + empdata.jobs[i].Description + "</td></tr>";
+
+                    }
+                    document.getElementById("jobs").innerHTML = out;
+                }
+            </script>
+        </table>
+        <br>
+        <div class="row" class="resume-title">Education</div>
+        <table id="job-table">
+            <tr>
+                <td class="job-column">
+                    Purdue University
+                    <br> West Lafayette, Indiana
+                    <br> Graduated: ABT
+                    <br> Master in Science
+                    <br> Major: IT Management
+                    <br>
+                </td>
+                <td class="job-column">
+                    Quincy University
+                    <br> Quincy, Illinois
+                    <br> Graduated: 1985
+                    <br> Bachelor in Science
+                    <br> Major: Computer Science
+                    <br> Minor: Mathematics
+                    <br>
+                </td>
+                <td class="job-column">
+                    John Wood Community College
+                    <br> Quincy, Illinois
+                    <br> Graduated: 1982
+                    <br> Associate in Science
+                    <br> Major: Computer Science
+                    <br> Minor: Mathematics
+                    <br>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <div class="row" class="resume-title">On-line Training</div>
+        <table id="train">
+            <tr>
+                <th>
+                    Course
+                </th>
+                <th>
+                    Site
+                </th>
+                <th>
+                    Course URL
+                </th>
+                <th>
+                    Course Description
+                </th>
+            </tr>
+
+            <script>
+                var xmlhttp = new XMLHttpRequest();
+                var url = "training.json";
+
+                xmlhttp.onreadystatechange = function() {
+                    if (xmlhttp.readyState === 4 && xmlhttp.status == 200) {
+                        var json_in = JSON.parse(xmlhttp.responseText);
+                        load_json(json_in);
+                    }
+                }
+                xmlhttp.open("GET", url, true);
+                xmlhttp.send();
+
+                function load_json(data) {
+										console.log("Showing Training data");
+										console.log(data);
+                    var out = "";
+                    var i;
+                    for (i = 0; i < data.courses.length; i++) {
+                        out += "<tr><td width=\"20%\">" + data.courses[i].Course + "</td><td width=\"10%\">" + data.courses[i].Website + "</td><td width=\"35%\">" + data.courses[i].URL + "</td><td width=\"35%\">" + data.courses[i].Description + "</td></tr>";
+                    }
+                    document.getElementById("train").innerHTML = out;
+                }
+            </script>
+
+
+
+        </table>
+        <br>
+        <div class="row" class="resume-title">Contact Me</div>
+        <br>
+        <footer>
+            I already have the best job in the world and I'm very happy to be where I'm at. That said, I do take on occasional side jobs that offer interesting challenges. I also do some occasional pro bono website development for non-profits whose cause I share.
+            If you think you might fall into one of those categories, feel free to contact me at: <a href="mailto:krigbaum@purdue.edu">krigbaum@purdue.edu</a>
+
+        </footer>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

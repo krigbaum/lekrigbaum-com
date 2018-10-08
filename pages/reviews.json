@@ -1,0 +1,46 @@
+{
+	"books" : [
+		{
+			"Title" : "The Go Programming Language",
+			"Author" : "Alan A. A. Donovan, Brian Kernighan",
+			"Rating" : 10,
+			"Description" : "This is the essential source for information on Go, the best new programming language to be found.  Part reference, part tutorial, it is the starting point for any serious programmer wanting to learn Go, or simply wanting an introduction to the languages' host of features.  Starting at ground  zero with \"Hello World\", it quickly advances through basic types, composite types, functions, and methods. It goes on to treat some of Go's trickier aspects such as interfaces, channels, and concurrency. It also introduces the reader to creating web servers with Go. This book is a classic in the same tradition as K & R's \"The C Programming Languages\" (and yes, if you're wondering, it is the same K as in Kernighan.  This book is a must have.  If it has a weakness, it's not in the book itself, but in that the language offers so much, that a single book can hope to cover everything."
+		},
+		{
+			"Title" : "A Software Engineer Learns HTML5, JavaScript & JQuery",
+			"Author" : "Dane Cameron",
+			"Rating" : 9,
+			"Description" : "This is a concise, clear, intelligent, and affordable book that gives an excellent introduction to HTML5 and JavaScript.  Despite being slighted in the title, CSS is not ignored, and receives an excellent appendix.  More than any other book I've read, this one excels in conveying the true essence and importance of HTML5.  It also does a better job of tying HTML5, CSS, and JavaScript into a coherent whole and showing how they should work togther.  While it focuses on the creation of a web app, it is equally useful for creating web pages."
+		},
+		{
+			"Title" : "Principles of Object-Oriented JavaScript",
+			"Author" : "Nicholas C. Zakas",
+			"Rating" : 8,
+			"Description" : "This book does a much better than average job of explaining objects and the Javascript version of OO than what is usually found in most general-purpose JavaScript books and tutorials"
+		},
+		{
+			"Title" : "HTML & CSS, Design and Build Websites",
+			"Author" : "Jon Duckett",
+			"Rating" : 6,
+			"Description" : "This is the most beautifully designed technical book I've ever read.  Unfortunately, I didn't find it terribly useful as a tutorial, but it's layout and organization do make it an excellent reference."
+		},
+		{
+			"Title" : "JavaScript & JQuery, Interactive Front-End Web Development",
+			"Author" : "Jon Duckett",
+			"Rating" : 7,
+			"Description" : "This turned out to be a very useful JavaScript book, much more so than I expected.  It's not the most detailed, but does a fine job of addressing the overall environment and uses of JavaScript.  Besides, apart from Duckett's companion HTML & CSS book, it's probably the prettiest tech book you'll ever read."
+		},
+		{
+			"Title" : "Core Java, Vol I - Fundamentals",
+			"Author" : "Cay S. Horstmann, Gary Cornell",
+			"Rating" : 9,
+			"Description" : "The Core Java books have been a personal favorite since Java 1.2.  In my opinion there are no better or more complete Java books.  While Fundamentals is intended to take the Java beginner from 0 to 60, the book moves quickly enough and at enough depth that it is probably most suited for someone with at least a bit of familiarity with the language."
+		},
+		{
+			"Title" : "Core Java, Vol II - Advanced Features",
+			"Author" : "Cay S. Horstmann, Gary Cornell",
+			"Rating" : 8,
+			"Description" : "The only semi-consistent criticism of the Core Java books has been the choice of material to go into each volume.  I've never been bothered by that as I've always regarded the set as essentially being one book with the physical split being one of convenience.  Advanced Features continues the excellent coverage of volume I, although it's rating is slightly lower since the covered features are advanced enough as to have more limited application, leading to more selective reading."
+		}
+	]
+}

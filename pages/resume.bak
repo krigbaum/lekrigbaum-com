@@ -1,0 +1,259 @@
+g!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>lekrigbaum</title>
+    <link rel="stylesheet" href="../css/lekrigbaum.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../css/nav.css" type="text/css" media="screen" />
+    <link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+    <header>
+        <div id="nav-menu">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a>
+                        <li><a href="../pages/wartree.html">Wartree</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="../pages/programming.html">Programming</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="flexbox">
+            <figure>
+                <img src="../images/wartree.png" alt="Wartree Logo" />
+                <figcaption>Wartree</figcaption>
+            </figure>
+            <div id="title">
+                <br>
+                <br>
+                <span id="title-line1">lekrigbaum.com</span>
+                <br>
+            </div>
+        </div>
+        <br>
+    </header>
+    <main>
+        <br>
+        <div id="page-title">Resume</div>
+        <hr>
+        <div id="resume">
+            <p>
+                <p>
+                    <div class="line">
+                        <div class="resume-heading">Position:</div>
+                        <div class="resume-data">&nbsp;&nbsp;Software Developer</div>
+                        <br>
+                    </div>
+                </p>
+                <p>
+                    <div class="line">
+                        <div class="resume-heading">Skills at a Glance:</div>
+                        <div class="resume-data">&nbsp;&nbsp;&middot; HTML &nbsp;&nbsp;&middot; CSS  &nbsp;&nbsp;&middot; Javascript &nbsp;&nbsp;&middot; PHP &nbsp;&nbsp;&middot; Java &nbsp;&nbsp;&middot; C &nbsp;&nbsp;&middot; Go &nbsp;&nbsp;&middot; C++ &nbsp;&nbsp;&middot; Python &nbsp;&nbsp;</div>
+                        <br>
+                    </div>
+                </p>
+            </p>
+            <div class="row" class="resume-title">Employment</div>
+
+            <table id="jobs"></table>
+            <script>
+                var xmlhttp = new XMLHttpRequest();
+                var url = "../data/employment.json";
+
+                xmlhttp.onreadystatechange = function() {
+                    if (xmlhttp.readyState === 4 && xmlhttp.status == 200) {
+                        var json_in = JSON.parse(xmlhttp.responseText);
+                        load_json(json_in);
+                    }
+                }
+                xmlhttp.open("GET", url, true);
+                xmlhttp.send();
+
+                function load_json(data) {
+                    var out = "";
+                    var i;
+                    for (i = 0; i < data.jobs.length; i++) {
+                        out += "<tr><td id = \"data-column\" width=\"30%\">" + data.jobs[i].Name + "<br>" + data.jobs[i].JobTitle + "<br>" + data.jobs[i].Dates + "</td><td id = \"desc-column\" width=\"70%\">" + data.jobs[i].Description + "</td></tr>";
+                    }
+                    document.getElementById("jobs").innerHTML = out;
+                }
+            </script>
+            </table>
+            <br>
+            <div class="row" class="resume-title">Education</div>
+            <table id="job-table">
+                <tr>
+                    <td class="job-column">
+                        Purdue University
+                        <br> West Lafayette, Indiana
+                        <br> Graduated: ABT
+                        <br> Master in Science
+                        <br> Major: IT Management
+                        <br>
+                    </td>
+                    <td class="job-column">
+                        Quincy University
+                        <br> Quuincy, Illinois
+                        <br> Graduated: 1985
+                        <br> Bachelor in Science
+                        <br> Major: Computer Science
+                        <br> Minor: Mathematics
+                        <br>
+                    </td>
+                    <td class="job-column">
+                        John Wood Community College
+                        <br> Quuincy, Illinois
+                        <br> Graduated: 1982
+                        <br> Associate in Science
+                        <br> Major: Computer Science
+                        <br> Minor: Mathematics
+                        <br>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <div class="row" class="resume-title">On-line Training</div>
+            <table>
+                <tr>
+                    <th>
+                        Course
+                    </th>
+                    <th>
+                        Site
+                    </th>
+                    <th>
+                        Course URL
+                    </th>
+                    <th>
+                        Course Description
+                    </th>
+                </tr>
+                
+		<!--
+		<tr>
+                    <td>
+                        Web Development
+                    </td>
+                    <td>
+                        Udacity
+                    </td>
+                    <td>
+                        <a href="https://www.udacity.com/course/web-development--cs253">Web Development</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Intro to HTML and CSS
+                    </td>
+                    <td>
+                        Udacity
+                    </td>
+                    <td>
+                        <a href="https://www.udacity.com/course/intro-to-html-and-css--ud304">Intro to HTML and CSS</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        JavaScript Basics
+                    </td>
+                    <td>
+                        Udacity
+                    </td>
+                    <td>
+                        <a href="https://www.udacity.com/course/javascript-basics--ud804">JavaScript Basics</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Responsive Web Design Fundamentals
+                    </td>
+                    <td>
+                        Udacity
+                    </td>
+                    <td>
+                        <a href="https://www.udacity.com/course/responsive-web-design-fundamentals--ud893">Responsive Web Design Fundamentals</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        JavaScript: Understanding the Weird Parts
+                    </td>
+                    <td>
+                        Udemy
+                    </td>
+                    <td>
+                        <a href="https://www.udemy.com/understand-javascript">JavaScript: Understanding the Weird Parts</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Bulding Responsive Real World Websites with HTML5 and CSS
+                    </td>
+                    <td>
+                        Udemy
+                    </td>
+                    <td>
+                        <a href="https://www.udemy.com/design-and-develop-a-killer-website-with-html5-and-css3">Bulding Responsive Real World Websites with HTML5 and CSS</a>
+                        <br>
+                        <!-- <a href="../Portfolio/Omnifood/index.html">View Portfolio Website</a> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Go Programming Language
+                    </td>
+                    <td>
+                        Udemy
+                    </td>
+                    <td>
+                        <a href="https://www.udemy.com/learn-how-to-code/">Google's Go (golang) Programming Language</a>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Introducing PHP
+                    </td>
+                    <td>
+                        Lynda.com
+                    </td>
+                    <td>
+                        <a href="http://www.lynda.com/PHP-tutorials/Introducing-PHP/418256-2.html">Introducing PHP</a>
+					</td>
+				</tr>
+			-->
+			</table>
+			<br>
+			<div class ="row" class="resume-title">Contact Me</div>
+			<br>
+			<footer>
+				I already have the best job in the world and I'm very happy to be where I'm at.  That said, I do take on occasional side jobs that offer interesting challenges. I also do some occasional pro bono website development for non-profits whose cause I share.  If you think you might fall into one of those categories, feel free to contact me at: <a href="mailto:krigbaum@purdue.edu">krigbaum@purdue.edu</a>
+
+                        </footer>
+                        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                        <!-- Include all compiled plugins (below), or include individual files as needed -->
+                        <script src="js/bootstrap.min.js"></script>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

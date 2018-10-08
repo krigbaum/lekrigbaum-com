@@ -1,0 +1,472 @@
+/* 
+    Created on : Mar 30, 2015, 2:40:39 PM
+    Author     : krigbaum
+*/
+        
+        html {
+            margin: 0;
+            padding: 0;
+            background: url(../images/red-background2.jpg) no-repeat center center fixed;
+            background-size: cover;
+            font-size: 2vw;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        p {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        header {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 270px;
+            color: red;
+            font-family: 'Handlee', cursive;
+            padding-top: 0;
+            margin-top: 0;
+        }
+        
+        figure {
+            float: left;
+            font-size: 1rem;
+            text-align: center;
+            width: 20%;
+        }
+        
+        #title {
+            flex-grow: 1;
+            width: 80%;
+            text-align: center;
+        }
+        
+        #title-line1 {
+            font-size: 5rem;
+            font-weight: bold;
+        }
+        
+        #title-line2 {
+            font-size: 36pt;
+            font-weight: bold;
+        }
+        
+        a {
+            color: yellow;
+        }
+        
+        a:hover {
+            font-weight: bold;
+        }
+        
+        hr {
+            width: 60%;
+            height: 1px;
+            color: lightslategray;
+            background-color: lightslategray;
+            border: none;
+        }
+        
+        .centered {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        
+        h3 {
+            color: red;
+            text-align: center;
+        }
+        
+        h4 {
+            color: red;
+            text-align: center;
+        }
+        
+        h5 {
+            color: yellow;
+            text-align: center;
+        }
+        
+        h6 {
+            text-align: center;
+            color: gainsboro;
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        
+        #listoflinks {
+            margin-left: 0;
+            margin-right: 0;
+            padding: 0;
+        }
+        
+        .link {
+            color: white;
+        }
+        
+        #nav-menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        #header-body {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            /*align-items: flex-start;*/
+        }
+        
+        #cont1 {
+            width: 16%;
+            background-color: red;
+            text-align: right;
+        }
+        
+        #cont2 {
+            width: 16%;
+            background-color: yellow;
+            text-align: left;
+        }
+        
+        cont3 {
+            width: 16%;
+            background-color: red;
+            text-align: right;
+        }
+        
+        #cont4 {
+            width: 16%;
+            background-color: yellow;
+            text-align: left;
+        }
+        
+        cont5 {
+            width: 16%;
+            background-color: red;
+            text-align: right;
+        }
+        
+        #cont6 {
+            width: 16%;
+            background-color: yellow;
+            text-align: left;
+        }
+        
+        #center-block {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            /*align-items: flex-start;*/
+        }
+        
+        #register {
+            width: 95%;
+        }
+        
+        .odd {
+            width: 12%;
+            text-align: right;
+        }
+        
+        .even {
+            text-align: left;
+        }
+        
+        .last-col {
+            width: 20%;
+            text-align: right;
+        }
+        
+        #center-item {
+            margin: auto;
+            width: 25%;
+        }
+        
+        main {
+            width: 100%;
+            min-height: 700px;
+            color: white;
+            font-size: 14pt;
+        }
+        
+        #code-list {
+            width: 30%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #code-list a {
+            color: white;
+        }
+        
+        #notice {
+            color: yellow;
+            text-align: center;
+        }
+        
+        #warning {
+            color: red;
+            font-size: 48px;
+        }
+        
+        #under_construction {
+            width: 70%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        footer {
+            width: 100%;
+            height: 135px;
+            color: white;
+        }
+        
+        address {
+            float: right;
+            margin-top: 5px;
+            margin-right: 5px;
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-size: 16px;
+            font-weight: bold;
+            color: red;
+        }
+        
+        #page-title {
+            width: 100%;
+            margin-top: 0;
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .row {
+            color: yellow;
+            background-color: black;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        
+        .line {
+            display: inline-flex;
+            flex-direction: row;
+        }
+        
+        resume {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .resume-title {
+            color: yellow;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .resume-heading {
+            float: left;
+            position: relative;
+            color: yellow;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .resume-data {
+            float: left;
+            position: relative;
+            color: white;
+            font-size: 24px;
+        }
+        
+        table {
+            color: white;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        table tr:first-child {
+            width: 35%;
+        }
+        
+        th,
+        td {
+            padding-bottom: 15px;
+        }
+        
+        td {
+            vertical-align: top;
+            width: 25%;
+        }
+        
+        #job-table {
+            width: 100%;
+        }
+        
+        #job-column {
+            width: 30%;
+        }
+        
+        #data-column {
+            width: 35%;
+        }
+        
+        #desc-column {
+            width: 65%;
+        }
+        
+        #heading {
+            text-align: center;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        
+        #book-title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 18pt;
+        }
+        
+        footer a {
+            text-align: center;
+        }
+        
+        #reviews {
+            table-layout: fixed;
+            width: 100%;
+        }
+        
+        #title {
+            width: 30%;
+        }
+        
+        #rating {
+            width: 5%;
+        }
+        
+        #desc {
+            width: 65%;
+        }
+        /* Login CSS */
+        
+        .login-page {
+            width: 360px;
+            padding: 3% 0 0;
+            margin: auto;
+        }
+        
+        .form {
+            position: relative;
+            z-index: 1;
+            /*background: #FFFFFF;*/
+            max-width: 360px;
+            margin: 0 auto 100px;
+            /*padding: 45px;*/
+            text-align: center;
+            /*box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);*/
+        }
+        
+        .form input {
+            outline: 0;
+            background: #f2f2f2;
+            width: 90%;
+            border: 0;
+            margin: 0 0 15px;
+            border-radius: 15%;
+            padding: 15px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        
+        .form button {
+            text-transform: uppercase;
+            outline: 0;
+            background: #4CAF50;
+            width: 100%;
+            border: 10% 0;
+            margin-top: 10px;
+            padding: 15px;
+            color: #FFFFFF;
+            font-size: 14px;
+            -webkit-transition: all 0.3 ease;
+            transition: all 0.3 ease;
+            cursor: pointer;
+        }
+        
+        .form button:hover,
+        .form button:active,
+        .form button:focus {
+            background: #43A047;
+        }
+        
+        .form .message {
+            margin: 15px 0 0;
+            color: #b3b3b3;
+            font-size: 15px;
+        }
+        
+        .form .message a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        
+        .form .register-form {
+            display: none;
+        }
+        
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        
+        .container:before,
+        .container:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        .container .info {
+            margin: 50px auto;
+            text-align: center;
+        }
+        
+        .container .info h1 {
+            margin: 0 0 15px;
+            padding: 0;
+            font-size: 36px;
+            font-weight: 300;
+            color: #1a1a1a;
+        }
+        
+        .container .info span {
+            color: #4d4d4d;
+            font-size: 12px;
+        }
+        
+        .container .info span a {
+            color: #000000;
+            text-decoration: none;
+        }
+        
+        .container .info span .fa {
+            color: #EF3B3A;
+        }

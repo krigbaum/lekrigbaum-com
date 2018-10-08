@@ -1,0 +1,28 @@
+{
+	"education" : [
+		{
+			"School" : "Purdue University",
+			"Location" : "West Lafayette, IN",
+			"GradDate" : "Garduated: ABT",
+			"Degree" : "Information Technology Management",
+			"Major" : "Master in Science",
+			"Minor" : ""
+		},
+		{
+			"School" : "Quincy University",
+			"Location" : "Quincy, IL",
+			"GradDate" : "1985",
+			"Degree" : "Bachelor in Science",
+			"Major" : "Computer Science",
+			"Minor" : "Mathematics"
+		},
+		{
+			"School" : "John Wood Community College",
+			"Location" : "Quincy, IL",
+			"GradDate" : "1982",
+			"Degree" : "Associate in Science",
+			"Major" : "Computer Science",
+			"Minor" : "Mathematics"
+		}
+	]
+}
